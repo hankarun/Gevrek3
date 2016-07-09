@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Kullanıcı Ayarları" >
+        <EditTextPreference
+            android:title="Geçerli Kullanıc"
+            android:summary="Kullanıcı İsminiz"
+            android:key="prefUserPassword"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Tema Ayarları" >
+        <ListPreference
+            android:key="pref_dark_theme"
+            android:title="Güncel tema"
+            android:summary="Temayı ayarlayın"
+            android:entries="@array/updateFrequency"
+            android:entryValues="@array/updateFrequencyValues"
+            />
+    </PreferenceCategory>
+
+</PreferenceScreen>
